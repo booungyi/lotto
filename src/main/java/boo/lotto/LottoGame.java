@@ -7,9 +7,10 @@ import java.util.Scanner;
 public class LottoGame {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Lotto1 lotto1 = new Lotto1();
-        System.out.println("구입 금액을 입력해주세요.");
-        int pay = sc.nextInt();
-        lotto1.Lottos(pay);
+        BuyLotto buyLotto = new BuyLotto();
+        UserInput userInput = new UserInput(sc.nextInt());
+//        System.out.println("구입 금액을 입력해주세요.");
+        buyLotto.Lottos(userInput.getPay());
+        System.out.println("usertinput:"+userInput.getPay());
     }
 }

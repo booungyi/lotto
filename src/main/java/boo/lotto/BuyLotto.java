@@ -4,7 +4,7 @@ import java.util.*;
 
 import static java.lang.Math.random;
 
-public class Lotto1 {
+public class BuyLotto {
     Random rand = new Random();
     int paytolotto = 0;
     int pay = 0;
